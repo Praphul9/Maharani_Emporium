@@ -1,0 +1,2915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pujakaro | Sacred Luxury Store</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f0f0f;
+color:#ffffff;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+ul{
+list-style:none;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+:root{
+
+--gold:#d4af37;
+--gold-light:#f5d76e;
+
+--black:#0f0f0f;
+--dark:#171717;
+--card:#1d1d1d;
+
+--white:#ffffff;
+--gray:#a5a5a5;
+
+--shadow:
+0 10px 40px rgba(0,0,0,.4);
+
+}
+
+.container{
+width:90%;
+max-width:1400px;
+margin:auto;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+height:85px;
+
+background:
+rgba(0,0,0,.92);
+
+backdrop-filter:blur(10px);
+
+z-index:9999;
+
+border-bottom:
+1px solid rgba(212,175,55,.15);
+
+}
+
+.navbar{
+
+height:85px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+.logo{
+
+font-size:32px;
+
+font-weight:800;
+
+letter-spacing:2px;
+
+color:var(--gold);
+
+}
+
+.nav-links{
+
+display:flex;
+
+gap:30px;
+
+align-items:center;
+
+}
+
+.nav-links a{
+
+color:white;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+color:var(--gold);
+
+}
+
+.icons{
+
+display:flex;
+
+gap:25px;
+
+align-items:center;
+
+}
+
+.icon-box{
+
+position:relative;
+
+cursor:pointer;
+
+font-size:22px;
+
+}
+
+.count{
+
+position:absolute;
+
+top:-8px;
+
+right:-10px;
+
+width:18px;
+height:18px;
+
+border-radius:50%;
+
+background:var(--gold);
+
+color:black;
+
+font-size:11px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-weight:700;
+
+}
+
+.mobile-menu{
+
+display:none;
+
+font-size:28px;
+
+cursor:pointer;
+
+}
+
+/* =========================
+MEGA MENU
+========================= */
+
+.mega-parent{
+position:relative;
+}
+
+.mega-menu{
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+width:950px;
+
+background:#111;
+
+padding:35px;
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:30px;
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.4s;
+
+border:
+1px solid rgba(212,175,55,.2);
+
+box-shadow:var(--shadow);
+
+}
+
+.mega-parent:hover .mega-menu{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+.mega-column h4{
+
+color:var(--gold);
+
+margin-bottom:15px;
+
+}
+
+.mega-column a{
+
+display:block;
+
+margin-bottom:10px;
+
+color:#ddd;
+
+}
+
+.mega-column a:hover{
+
+color:var(--gold);
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+margin-top:85px;
+
+height:92vh;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.slide{
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+background-size:cover;
+background-position:center;
+
+opacity:0;
+
+transition:1s;
+
+}
+
+.slide.active{
+
+opacity:1;
+
+}
+
+.overlay{
+
+height:100%;
+
+background:
+rgba(0,0,0,.55);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.overlay h1{
+
+font-size:72px;
+
+max-width:900px;
+
+margin-bottom:20px;
+
+line-height:1.1;
+
+}
+
+.overlay p{
+
+font-size:20px;
+
+max-width:700px;
+
+color:#ddd;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+margin-top:30px;
+
+}
+
+.btn{
+
+padding:14px 35px;
+
+border:none;
+
+cursor:pointer;
+
+font-weight:700;
+
+border-radius:6px;
+
+transition:.3s;
+
+}
+
+.gold-btn{
+
+background:var(--gold);
+
+color:black;
+
+}
+
+.gold-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+.outline-btn{
+
+border:1px solid var(--gold);
+
+background:transparent;
+
+color:var(--gold);
+
+}
+
+.outline-btn:hover{
+
+background:var(--gold);
+
+color:black;
+
+}
+
+.prev,
+.next{
+
+position:absolute;
+
+top:50%;
+
+transform:translateY(-50%);
+
+width:50px;
+height:50px;
+
+border:none;
+
+cursor:pointer;
+
+font-size:20px;
+
+background:
+rgba(212,175,55,.25);
+
+color:white;
+
+z-index:10;
+
+}
+
+.prev{
+left:20px;
+}
+
+.next{
+right:20px;
+}
+
+/* =========================
+COMMON SECTION
+========================= */
+
+section{
+padding:100px 0;
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+
+color:var(--gold);
+
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:991px){
+
+.nav-links{
+display:none;
+}
+
+.mobile-menu{
+display:block;
+}
+
+.overlay h1{
+font-size:52px;
+}
+
+}
+
+@media(max-width:768px){
+
+.overlay h1{
+font-size:38px;
+}
+
+.overlay p{
+font-size:16px;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.mega-menu{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<div class="container navbar">
+
+<div class="logo">
+PUJAKARO
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="#">Home</a>
+</li>
+
+<li class="mega-parent">
+
+<a href="#">
+Categories
+<i class="fa-solid fa-angle-down"></i>
+</a>
+
+<div class="mega-menu">
+
+<div class="mega-column">
+
+<h4>Puja Essentials</h4>
+
+<a href="pujakit.html">Puja Kits</a>
+
+<a href="#">Puja Samagri</a>
+
+<a href="#">Kalash</a>
+
+<a href="#">Puja Thali</a>
+
+<a href="#">Hawan Kits</a>
+
+</div>
+
+<div class="mega-column">
+
+<h4>Temple Items</h4>
+
+<a href="#">Brass Diyas</a>
+
+<a href="#">Temple Bells</a>
+
+<a href="#">Incense Holders</a>
+
+<a href="#">Camphor</a>
+
+<a href="#">Aarti Lamps</a>
+
+</div>
+
+<div class="mega-column">
+
+<h4>God Idols</h4>
+
+<a href="#">Ganesha</a>
+
+<a href="#">Shiva</a>
+
+<a href="#">Hanuman</a>
+
+<a href="#">Lakshmi</a>
+
+<a href="#">Durga Maa</a>
+
+</div>
+
+<div class="mega-column">
+
+<h4>Festivals</h4>
+
+<a href="#">Diwali</a>
+
+<a href="#">Navratri</a>
+
+<a href="#">Janmashtami</a>
+
+<a href="#">Mahashivratri</a>
+
+<a href="#">Ganesh Chaturthi</a>
+
+</div>
+
+</div>
+
+</li>
+
+<li>
+<a href="#products">Products</a>
+</li>
+
+<li>
+<a href="#best-sellers">Best Sellers</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+<div class="icons">
+
+<div class="icon-box">
+
+<i class="fa-solid fa-heart"></i>
+
+<span
+id="wishlistCount"
+class="count">
+0
+</span>
+
+</div>
+
+<div class="icon-box">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span
+id="cartCount"
+class="count">
+0
+</span>
+
+</div>
+
+<div class="mobile-menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- =========================
+HERO SLIDER
+========================= -->
+
+<section class="hero">
+
+<div
+class="slide active"
+style="background-image:url('https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1800');">
+
+<div class="overlay">
+
+<h1>
+Sacred Luxury For Every Ritual
+</h1>
+
+<p>
+Premium spiritual products crafted with devotion, purity and elegance.
+</p>
+
+<div class="hero-buttons">
+
+<button class="btn gold-btn">
+Shop Now
+</button>
+
+<button class="btn outline-btn">
+Explore Collection
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div
+class="slide"
+style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1800');">
+
+<div class="overlay">
+
+<h1>
+Experience Divine Traditions
+</h1>
+
+<p>
+Handpicked spiritual products for every sacred occasion.
+</p>
+
+</div>
+
+</div>
+
+<div
+class="slide"
+style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1800');">
+
+<div class="overlay">
+
+<h1>
+Celebrate Every Festival
+</h1>
+
+<p>
+Exclusive collections for Diwali, Navratri, Janmashtami and more.
+</p>
+
+</div>
+
+</div>
+
+<button class="prev">
+❮
+</button>
+
+<button class="next">
+❯
+</button>
+
+</section>
+<!-- =========================
+SHOP BY CATEGORY
+========================= -->
+
+<section id="categories">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Shop By Category</h2>
+</div>
+
+<div class="category-grid">
+
+<div class="category-card">
+
+<i class="fa-solid fa-om"></i>
+
+<h3>Puja Samagri</h3>
+
+<p>
+Authentic ritual essentials
+for every ceremony.
+</p>
+
+</div>
+
+<div class="category-card">
+
+<i class="fa-solid fa-box-open"></i>
+
+<h3>Puja Kits</h3>
+
+<p>
+Ready-to-use premium
+ritual packages.
+</p>
+
+</div>
+
+<div class="category-card">
+
+<i class="fa-solid fa-gopuram"></i>
+
+<h3>Temple Essentials</h3>
+
+<p>
+Brass Diyas, Bells and
+Temple Accessories.
+</p>
+
+</div>
+
+<div class="category-card">
+
+<i class="fa-solid fa-fire"></i>
+
+<h3>Dhoop & Incense</h3>
+
+<p>
+Premium fragrances for
+daily worship.
+</p>
+
+</div>
+
+<div class="category-card">
+
+<i class="fa-solid fa-place-of-worship"></i>
+
+<h3>God Idols</h3>
+
+<p>
+Beautiful divine idols
+for your temple.
+</p>
+
+</div>
+
+<div class="category-card">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>Festival Collection</h3>
+
+<p>
+Exclusive products for
+all major festivals.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/* =========================
+CATEGORY SECTION
+========================= */
+
+.category-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.category-card{
+
+background:var(--card);
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.4s;
+
+border:
+1px solid rgba(212,175,55,.15);
+
+cursor:pointer;
+
+}
+
+.category-card:hover{
+
+transform:
+translateY(-10px);
+
+border-color:
+var(--gold);
+
+box-shadow:
+0 15px 40px rgba(212,175,55,.15);
+
+}
+
+.category-card i{
+
+font-size:45px;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.category-card h3{
+
+margin-bottom:12px;
+
+font-size:22px;
+
+}
+
+.category-card p{
+
+color:#bdbdbd;
+
+line-height:1.7;
+
+font-size:15px;
+
+}
+
+</style>
+<!-- =========================
+FEATURED PRODUCTS
+========================= -->
+
+<section id="products">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Featured Products</h2>
+</div>
+
+<div class="carousel-wrapper">
+
+<button class="product-prev">
+❮
+</button>
+
+<div class="product-carousel">
+
+<!-- PRODUCT 1 -->
+
+<div class="product-card">
+
+<div class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img
+src="https://png.pngtree.com/png-clipart/20241110/original/pngtree-traditional-puja-thali-plate-for-ritual-ceremony-png-image_16844734.png"
+alt="Premium Puja Kit">
+
+<h3>Premium Puja Kit</h3>
+
+<p class="price">
+$299
+</p>
+
+<div class="product-actions">
+
+<button
+class="cart-btn"
+data-product="Premium Puja Kit">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card">
+
+<div class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img
+src="https://static.vecteezy.com/system/resources/previews/060/629/222/non_2x/intricate-golden-idol-of-lord-ganesh-in-traditional-style-isolated-on-transparent-background-free-png.png"
+alt="Ganesha Idol">
+
+<h3>Lord Ganesha Idol</h3>
+
+<p class="price">
+₹999
+</p>
+
+<div class="product-actions">
+
+<button
+class="cart-btn"
+data-product="Lord Ganesha Idol">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card">
+
+<div class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img
+src="https://tse3.mm.bing.net/th/id/OIP.80j88AkpupkZnRg5zVmMiAHaHa?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3"
+alt="Brass Diya">
+
+<h3>Luxury Brass Diya</h3>
+
+<p class="price">
+₹799
+</p>
+
+<div class="product-actions">
+
+<button
+class="cart-btn"
+data-product="Luxury Brass Diya">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="product-card">
+
+<div class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img
+src="https://thumbs.dreamstime.com/z/smoking-sandalwood-incense-dark-background-smoking-sandalwood-incense-dark-background-used-aesthetic-reasons-218620198.jpg"
+alt="Incense">
+
+<h3>Sandalwood Incense</h3>
+
+<p class="price">
+₹249
+</p>
+
+<div class="product-actions">
+
+<button
+class="cart-btn"
+data-product="Sandalwood Incense">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 5 -->
+
+<div class="product-card">
+
+<div class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img
+src="https://thumbs.dreamstime.com/b/hindu-copper-kalash-isolated-white-background-copper-kalash-used-hindu-worship-rituals-isolated-white-background-366208165.jpg"
+alt="Copper Kalash">
+
+<h3>Copper Kalash</h3>
+
+<p class="price">
+₹699
+</p>
+
+<div class="product-actions">
+
+<button
+class="cart-btn"
+data-product="Copper Kalash">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 6 -->
+
+<div class="product-card">
+
+<div class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img
+src="https://wallpapercave.com/wp/wp12060512.jpg"
+alt="Temple Bell">
+
+<h3>Temple Bell</h3>
+
+<p class="price">
+₹399
+</p>
+
+<div class="product-actions">
+
+<button
+class="cart-btn"
+data-product="Temple Bell">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<button class="product-next">
+❯
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/* =========================
+PRODUCTS
+========================= */
+
+.carousel-wrapper{
+position:relative;
+}
+
+.product-carousel{
+
+display:flex;
+
+gap:25px;
+
+overflow-x:auto;
+
+scrollbar-width:none;
+
+scroll-behavior:smooth;
+
+padding:10px;
+
+}
+
+.product-carousel::-webkit-scrollbar{
+display:none;
+}
+
+.product-card{
+
+position:relative;
+
+min-width:320px;
+
+background:var(--card);
+
+border-radius:18px;
+
+overflow:hidden;
+
+border:
+1px solid rgba(212,175,55,.15);
+
+transition:.4s;
+
+}
+
+.product-card:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--gold);
+
+box-shadow:
+0 15px 40px rgba(212,175,55,.15);
+
+}
+
+.product-card img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+}
+
+.product-card h3{
+
+padding:18px 20px 8px;
+
+font-size:22px;
+
+}
+
+.price{
+
+padding:0 20px;
+
+font-size:24px;
+
+font-weight:700;
+
+color:var(--gold);
+
+}
+
+.product-actions{
+
+padding:20px;
+
+}
+
+.cart-btn{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+background:var(--gold);
+
+color:black;
+
+font-weight:700;
+
+cursor:pointer;
+
+border-radius:8px;
+
+}
+
+.cart-btn:hover{
+opacity:.9;
+}
+
+.wishlist-btn{
+
+position:absolute;
+
+top:15px;
+
+right:15px;
+
+width:45px;
+
+height:45px;
+
+background:
+rgba(0,0,0,.7);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+cursor:pointer;
+
+z-index:2;
+
+}
+
+.wishlist-btn.active{
+
+background:var(--gold);
+
+color:black;
+
+}
+
+.product-prev,
+.product-next{
+
+position:absolute;
+
+top:50%;
+
+transform:translateY(-50%);
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+cursor:pointer;
+
+border-radius:50%;
+
+background:var(--gold);
+
+color:black;
+
+font-size:20px;
+
+z-index:5;
+
+}
+
+.product-prev{
+left:-25px;
+}
+
+.product-next{
+right:-25px;
+}
+
+@media(max-width:768px){
+
+.product-card{
+min-width:260px;
+}
+
+.product-prev,
+.product-next{
+display:none;
+}
+
+}
+
+</style>
+
+<!-- =========================
+BEST SELLERS
+========================= -->
+
+<section id="best-sellers">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Best Sellers</h2>
+</div>
+
+<div class="best-seller-grid">
+
+<div class="best-card">
+
+<div class="badge">
+BEST SELLER
+</div>
+
+<img
+src="https://static.vecteezy.com/system/resources/previews/060/629/222/non_2x/intricate-golden-idol-of-lord-ganesh-in-traditional-style-isolated-on-transparent-background-free-png.png"
+alt="Ganesha Idol">
+
+<h3>
+Premium Ganesha Idol
+</h3>
+
+<p>
+₹1,299
+</p>
+
+</div>
+
+<div class="best-card">
+
+<div class="badge">
+TOP RATED
+</div>
+
+<img
+src="https://tse3.mm.bing.net/th/id/OIP.80j88AkpupkZnRg5zVmMiAHaHa?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3"
+alt="Brass Diya">
+
+<h3>
+Luxury Brass Diya
+</h3>
+
+<p>
+₹899
+</p>
+
+</div>
+
+<div class="best-card">
+
+<div class="badge">
+POPULAR
+</div>
+
+<img
+src="https://tse2.mm.bing.net/th/id/OIP.-GIiZbWX2TJxogW6wr3B6QHaHa?cb=thfvnextfalcon2&pid=ImgDet&w=474&h=474&rs=1&o=7&rm=3"
+alt="Puja Kit">
+
+<h3>
+Complete Puja Kit
+</h3>
+
+<p>
+₹799
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+FESTIVAL COLLECTION
+========================= -->
+
+<section id="festival">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Festival Collection</h2>
+</div>
+
+<div class="festival-grid">
+
+<div
+class="festival-card"
+style="background-image:url('https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1800');">
+
+<div class="festival-overlay">
+
+<h3>
+Diwali Collection
+</h3>
+
+<p>
+Premium Diyas & Decorations
+</p>
+
+</div>
+
+</div>
+
+<div
+class="festival-card"
+style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1800');">
+
+<div class="festival-overlay">
+
+<h3>
+Navratri Collection
+</h3>
+
+<p>
+Sacred Festival Essentials
+</p>
+
+</div>
+
+</div>
+
+<div
+class="festival-card"
+style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1800');">
+
+<div class="festival-overlay">
+
+<h3>
+Mahashivratri Collection
+</h3>
+
+<p>
+Exclusive Shiva Offerings
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/* =========================
+BEST SELLERS
+========================= */
+
+.best-seller-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.best-card{
+
+background:var(--card);
+
+border-radius:18px;
+
+overflow:hidden;
+
+position:relative;
+
+border:
+1px solid rgba(212,175,55,.15);
+
+transition:.4s;
+
+}
+
+.best-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--gold);
+
+}
+
+.best-card img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+}
+
+.best-card h3{
+
+padding:20px 20px 10px;
+
+font-size:22px;
+
+}
+
+.best-card p{
+
+padding:0 20px 25px;
+
+font-size:22px;
+
+font-weight:700;
+
+color:var(--gold);
+
+}
+
+.badge{
+
+position:absolute;
+
+top:15px;
+
+left:15px;
+
+background:var(--gold);
+
+color:black;
+
+padding:8px 14px;
+
+border-radius:30px;
+
+font-size:12px;
+
+font-weight:700;
+
+}
+
+/* =========================
+FESTIVAL SECTION
+========================= */
+
+.festival-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:25px;
+
+}
+
+.festival-card{
+
+height:420px;
+
+border-radius:18px;
+
+overflow:hidden;
+
+background-size:cover;
+
+background-position:center;
+
+position:relative;
+
+}
+
+.festival-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+linear-gradient(
+to top,
+rgba(0,0,0,.9),
+rgba(0,0,0,.25)
+);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:flex-end;
+
+padding:35px;
+
+}
+
+.festival-overlay h3{
+
+font-size:32px;
+
+margin-bottom:10px;
+
+}
+
+.festival-overlay p{
+
+font-size:16px;
+
+color:#ddd;
+
+}
+
+</style>
+
+<!-- =========================
+PARALLAX BANNER
+========================= -->
+
+<section class="parallax">
+
+<div class="parallax-overlay">
+
+<h2>
+Experience Spiritual Luxury
+</h2>
+
+<p>
+Handpicked products for sacred rituals, festivals and divine celebrations.
+</p>
+
+<a href="#products" class="btn gold-btn">
+Explore Collection
+</a>
+
+</div>
+
+</section>
+
+<!-- =========================
+WHY CHOOSE US
+========================= -->
+
+<section id="why-us">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Why Choose Pujakaro</h2>
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-certificate"></i>
+
+<h3>
+Authentic Products
+</h3>
+
+<p>
+Carefully sourced premium spiritual essentials.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>
+Fast Delivery
+</h3>
+
+<p>
+Quick and reliable shipping across India.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-lock"></i>
+
+<h3>
+Secure Payments
+</h3>
+
+<p>
+Safe and trusted payment gateway protection.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>
+24x7 Support
+</h3>
+
+<p>
+Dedicated customer assistance whenever needed.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+STATS SECTION
+========================= -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-box">
+
+<h2>
+10K+
+</h2>
+
+<p>
+Happy Customers
+</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>
+500+
+</h2>
+
+<p>
+Premium Products
+</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>
+50+
+</h2>
+
+<p>
+Festivals Covered
+</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>
+100%
+</h2>
+
+<p>
+Authentic Items
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/* =========================
+PARALLAX
+========================= */
+
+.parallax{
+
+height:550px;
+
+background-image:url(
+'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1800'
+);
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
+
+padding:0;
+
+}
+
+.parallax-overlay{
+
+height:100%;
+
+background:
+rgba(0,0,0,.65);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.parallax-overlay h2{
+
+font-size:60px;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.parallax-overlay p{
+
+font-size:20px;
+
+max-width:800px;
+
+color:#ddd;
+
+margin-bottom:30px;
+
+}
+
+/* =========================
+FEATURES
+========================= */
+
+.feature-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.feature-card{
+
+background:var(--card);
+
+padding:35px;
+
+text-align:center;
+
+border-radius:18px;
+
+border:
+1px solid rgba(212,175,55,.15);
+
+transition:.4s;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--gold);
+
+}
+
+.feature-card i{
+
+font-size:48px;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+margin-bottom:12px;
+
+font-size:22px;
+
+}
+
+.feature-card p{
+
+color:#cfcfcf;
+
+line-height:1.7;
+
+}
+
+/* =========================
+STATS
+========================= */
+
+.stats{
+
+background:#111;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.stat-box{
+
+text-align:center;
+
+padding:40px 20px;
+
+}
+
+.stat-box h2{
+
+font-size:55px;
+
+color:var(--gold);
+
+margin-bottom:10px;
+
+}
+
+.stat-box p{
+
+color:#ddd;
+
+font-size:18px;
+
+}
+
+@media(max-width:768px){
+
+.parallax{
+background-attachment:scroll;
+}
+
+.parallax-overlay h2{
+font-size:38px;
+}
+
+.parallax-overlay p{
+font-size:16px;
+}
+
+}
+
+</style>
+
+<!-- =========================
+TESTIMONIALS
+========================= -->
+
+<section id="testimonials">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Customer Reviews</h2>
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+
+<p>
+"The quality is exceptional and packaging is premium. Highly recommended."
+</p>
+
+<h4>
+— Rahul Sharma
+</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+"Fast delivery and authentic products. My family loved everything."
+</p>
+
+<h4>
+— Priya Verma
+</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+"The best online destination for puja essentials and festival products."
+</p>
+
+<h4>
+— Amit Gupta
+</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+NEWSLETTER
+========================= -->
+
+<section id="newsletter">
+
+<div class="container">
+
+<div class="newsletter-box">
+
+<h2>
+Join The Pujakaro Community
+</h2>
+
+<p>
+Get exclusive offers, festival discounts and new arrivals directly in your inbox.
+</p>
+
+<form id="newsletterForm">
+
+<input
+type="email"
+id="newsletterEmail"
+placeholder="Enter your email address"
+required>
+
+<button type="submit">
+Subscribe
+</button>
+
+</form>
+
+<div id="newsletterMessage"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+CONTACT
+========================= -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Address</h3>
+
+<p>
+Gurgaon, Haryana, India
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<h3>Phone</h3>
+
+<p>
++91 XXXXX XXXXX
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>Email</h3>
+
+<p>
+support@pujakaro.com
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Pujakaro</h3>
+
+<p>
+Premium spiritual and ritual products crafted for devotion and elegance.
+</p>
+
+<div class="social-icons">
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Categories</h3>
+
+<ul>
+
+<li><a href="pujakit.html">Puja Kits</a></li>
+<li><a href="#">God Idols</a></li>
+<li><a href="#">Temple Essentials</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="copyright">
+
+© 2026 Pujakaro. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+<button id="scrollTopBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<style>
+
+/* =========================
+TESTIMONIALS
+========================= */
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.testimonial-card{
+background:var(--card);
+padding:30px;
+border-radius:18px;
+border:1px solid rgba(212,175,55,.15);
+}
+
+.testimonial-card p{
+line-height:1.8;
+margin-bottom:20px;
+color:#ddd;
+}
+
+.testimonial-card h4{
+color:var(--gold);
+}
+
+/* =========================
+NEWSLETTER
+========================= */
+
+.newsletter-box{
+background:var(--card);
+padding:60px;
+border-radius:20px;
+text-align:center;
+border:1px solid rgba(212,175,55,.15);
+}
+
+.newsletter-box h2{
+font-size:40px;
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.newsletter-box p{
+margin-bottom:25px;
+color:#ddd;
+}
+
+#newsletterForm{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+#newsletterForm input{
+width:400px;
+max-width:100%;
+padding:15px;
+border:none;
+border-radius:8px;
+}
+
+#newsletterForm button{
+padding:15px 30px;
+border:none;
+border-radius:8px;
+background:var(--gold);
+font-weight:700;
+cursor:pointer;
+}
+
+#newsletterMessage{
+margin-top:15px;
+color:var(--gold);
+}
+
+/* =========================
+CONTACT
+========================= */
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.contact-card{
+background:var(--card);
+padding:35px;
+text-align:center;
+border-radius:18px;
+border:1px solid rgba(212,175,55,.15);
+}
+
+.contact-card i{
+font-size:42px;
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.contact-card h3{
+margin-bottom:10px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+background:#090909;
+padding:70px 0 30px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+margin-bottom:40px;
+}
+
+.footer-grid h3{
+color:var(--gold);
+margin-bottom:20px;
+}
+
+.footer-grid p,
+.footer-grid li{
+color:#ccc;
+margin-bottom:10px;
+}
+
+.footer-grid a:hover{
+color:var(--gold);
+}
+
+.social-icons{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.social-icons a{
+width:45px;
+height:45px;
+border-radius:50%;
+background:#1a1a1a;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.social-icons a:hover{
+background:var(--gold);
+color:black;
+}
+
+footer hr{
+border:none;
+height:1px;
+background:#222;
+margin-bottom:20px;
+}
+
+.copyright{
+text-align:center;
+color:#888;
+}
+
+/* =========================
+SCROLL BUTTON
+========================= */
+
+#scrollTopBtn{
+position:fixed;
+bottom:25px;
+right:25px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:var(--gold);
+color:black;
+cursor:pointer;
+display:none;
+z-index:999;
+font-size:18px;
+}
+
+</style>
+
+<script>
+
+/* ==========================
+HERO SLIDER
+========================== */
+
+const slides =
+document.querySelectorAll(".slide");
+
+const nextSlideBtn =
+document.querySelector(".next");
+
+const prevSlideBtn =
+document.querySelector(".prev");
+
+let currentSlide = 0;
+
+function showSlide(index){
+
+slides.forEach(slide=>{
+
+slide.classList.remove("active");
+
+});
+
+slides[index].classList.add("active");
+
+}
+
+function nextSlide(){
+
+currentSlide++;
+
+if(currentSlide >= slides.length){
+
+currentSlide = 0;
+
+}
+
+showSlide(currentSlide);
+
+}
+
+function prevSlide(){
+
+currentSlide--;
+
+if(currentSlide < 0){
+
+currentSlide =
+slides.length - 1;
+
+}
+
+showSlide(currentSlide);
+
+}
+
+if(nextSlideBtn){
+
+nextSlideBtn.addEventListener(
+"click",
+nextSlide
+);
+
+}
+
+if(prevSlideBtn){
+
+prevSlideBtn.addEventListener(
+"click",
+prevSlide
+);
+
+}
+
+setInterval(nextSlide,5000);
+
+/* ==========================
+PRODUCT CAROUSEL
+========================== */
+
+const productCarousel =
+document.querySelector(".product-carousel");
+
+const productNext =
+document.querySelector(".product-next");
+
+const productPrev =
+document.querySelector(".product-prev");
+
+if(productNext){
+
+productNext.addEventListener(
+"click",
+()=>{
+
+productCarousel.scrollBy({
+
+left:350,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+if(productPrev){
+
+productPrev.addEventListener(
+"click",
+()=>{
+
+productCarousel.scrollBy({
+
+left:-350,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+/* ==========================
+LOCAL STORAGE
+========================== */
+
+let cart =
+
+JSON.parse(
+localStorage.getItem("pujakaroCart")
+)
+
+|| [];
+
+let wishlist =
+
+JSON.parse(
+localStorage.getItem("pujakaroWishlist")
+)
+
+|| [];
+
+const cartCount =
+document.getElementById("cartCount");
+
+const wishlistCount =
+document.getElementById("wishlistCount");
+
+function updateCounters(){
+
+if(cartCount){
+
+cartCount.innerText =
+cart.length;
+
+}
+
+if(wishlistCount){
+
+wishlistCount.innerText =
+wishlist.length;
+
+}
+
+}
+
+updateCounters();
+
+/* ==========================
+ADD TO CART
+========================== */
+
+const cartButtons =
+
+document.querySelectorAll(
+".cart-btn"
+);
+
+cartButtons.forEach(button=>{
+
+button.addEventListener(
+"click",
+()=>{
+
+const productName =
+
+button.dataset.product;
+
+cart.push(productName);
+
+localStorage.setItem(
+
+"pujakaroCart",
+
+JSON.stringify(cart)
+
+);
+
+updateCounters();
+
+button.innerText =
+"Added ✓";
+
+setTimeout(()=>{
+
+button.innerText =
+"Add To Cart";
+
+},1500);
+
+});
+
+});
+
+/* ==========================
+WISHLIST
+========================== */
+
+const wishlistButtons =
+
+document.querySelectorAll(
+".wishlist-btn"
+);
+
+wishlistButtons.forEach(
+(btn,index)=>{
+
+if(
+wishlist.includes(index)
+){
+
+btn.classList.add("active");
+
+}
+
+btn.addEventListener(
+"click",
+()=>{
+
+if(
+wishlist.includes(index)
+){
+
+wishlist =
+
+wishlist.filter(
+item=>item!==index
+);
+
+btn.classList.remove(
+"active"
+);
+
+}else{
+
+wishlist.push(index);
+
+btn.classList.add(
+"active"
+);
+
+}
+
+localStorage.setItem(
+
+"pujakaroWishlist",
+
+JSON.stringify(wishlist)
+
+);
+
+updateCounters();
+
+});
+
+});
+
+/* ==========================
+NEWSLETTER
+========================== */
+
+const newsletterForm =
+
+document.getElementById(
+"newsletterForm"
+);
+
+if(newsletterForm){
+
+newsletterForm.addEventListener(
+"submit",
+function(e){
+
+e.preventDefault();
+
+const email =
+
+document.getElementById(
+"newsletterEmail"
+);
+
+const message =
+
+document.getElementById(
+"newsletterMessage"
+);
+
+message.innerHTML =
+"Thank you for subscribing!";
+
+email.value = "";
+
+});
+
+}
+
+/* ==========================
+SCROLL TO TOP
+========================== */
+
+const scrollBtn =
+
+document.getElementById(
+"scrollTopBtn"
+);
+
+window.addEventListener(
+"scroll",
+()=>{
+
+if(!scrollBtn) return;
+
+if(window.scrollY > 300){
+
+scrollBtn.style.display =
+"block";
+
+}else{
+
+scrollBtn.style.display =
+"none";
+
+}
+
+});
+
+if(scrollBtn){
+
+scrollBtn.addEventListener(
+"click",
+()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+/* ==========================
+MOBILE MENU
+========================== */
+
+const mobileMenu =
+
+document.querySelector(
+".mobile-menu"
+);
+
+const navLinks =
+
+document.querySelector(
+".nav-links"
+);
+
+if(mobileMenu){
+
+mobileMenu.addEventListener(
+"click",
+()=>{
+
+if(
+navLinks.style.display ===
+"flex"
+){
+
+navLinks.style.display =
+"none";
+
+}else{
+
+navLinks.style.display =
+"flex";
+
+navLinks.style.flexDirection =
+"column";
+
+navLinks.style.position =
+"absolute";
+
+navLinks.style.top =
+"85px";
+
+navLinks.style.left =
+"0";
+
+navLinks.style.width =
+"100%";
+
+navLinks.style.background =
+"#111";
+
+navLinks.style.padding =
+"20px";
+
+}
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
