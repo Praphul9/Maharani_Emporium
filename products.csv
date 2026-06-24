@@ -1,0 +1,21 @@
+id,name,category,catLabel,price,oldPrice,badge,rating,reviews,availability,imageName,description
+1,Premium Puja Samagri Kit,puja,Puja Samagri,24.99,34.99,bestseller,4.8,234,YES,puja-samagri-kit.jpg,Complete puja kit
+2,Brass Oil Diya (Set of 6),temple,Temple Essentials,19.99,,new,4.9,187,YES,brass-diya.jpg,Handcrafted pure brass diyas with deep bowl for longer burn time. Ideal for all occasions.
+3,Pure Copper Kalash,temple,Temple Essentials,29.99,39.99,sale,4.7,142,YES,copper-kalash.jpg,Traditional copper kalash used in all Hindu festivals. Comes with lid and mango leaves.
+4,Chandan & Rose Dhoop Sticks,incense,Dhoop & Incense,8.99,,,4.6,98,YES,chandan-dhoop.jpg,Handrolled premium dhoop sticks with natural sandalwood and rose extracts. 40 sticks per pack.
+5,Marble Ganesh Murti,idols,Murtis & Idols,79.99,99.99,sale,4.9,311,YES,ganesh-murti.jpg,Hand-carved white marble Ganesh idol with intricate details. Approximately 8 inches height.
+6,Navratri Gift Hamper,gifts,Gift Hampers,54.99,69.99,bestseller,4.8,89,YES,navratri-hamper.jpg,Curated Navratri gift set with diya
+7,Navratri Puja Samagri Kit,puja,Puja Samagri,39.99,54.99,new,4.7,156,YES,navratri-kit.jpg,All-in-one Navratri samagri kit covering all 9 days of rituals. Eco-friendly packaging.
+8,Brass Temple Bell,temple,Temple Essentials,22.99,,,4.5,73,YES,brass-bell.jpg,Traditional hanging brass bell with rope. 5 inch diameter. Produces clear resonant sound.
+9,Nag Champa Agarbatti,incense,Dhoop & Incense,6.99,,new,4.6,204,YES,nag-champa.jpg,Premium Nag Champa incense sticks. 100% natural ingredients. Box of 50 sticks.
+10,Silver-Plated Puja Thali,puja,Puja Samagri,44.99,59.99,bestseller,5,67,YES,silver-thali.jpg,Silver-plated decorative puja thali with intricate border. Includes 5 matching katoris.
+11,Laxmi Brass Idol,idols,Murtis & Idols,89.99,,,4.8,44,YES,laxmi-idol.jpg,Standing Laxmi murti in pure brass with polished finish. 10 inches height. Ideal for home mandirs.
+12,Rose & Jasmine Agarbatti,incense,Dhoop & Incense,5.99,,,4.4,312,YES,rose-agarbatti.jpg,Soft floral incense sticks with pure rose and jasmine extracts. Pack of 100 sticks.
+13,Wooden Home Mandir,temple,Temple Essentials,149.99,199.99,sale,4.7,52,YES,wooden-mandir.jpg,Handcrafted teak wood home temple with intricate carving. Fits standard idol sizes up to 12 inches.
+14,Panchamrit Set,puja,Puja Samagri,34.99,,,4.6,88,YES,panchamrit-set.jpg,Complete panchamrit set with copper vessels for milk
+15,Rudraksha Bracelet,accessories,Accessories,18.99,24.99,,4.8,176,YES,rudraksha-bracelet.jpg,Authentic 5-mukhi rudraksha bracelet with silver-plated spacers. Energized and certified.
+16,Tulsi Mala,accessories,Accessories,12.99,,,4.7,93,YES,tulsi-mala.jpg,Pure Vrindavan tulsi mala with 108 beads. Hand-knotted. Comes in a velvet pouch.
+17,Agarbatti Stand (Brass),temple,Temple Essentials,9.99,,,4.5,61,YES,agarbatti-stand.jpg,Decorative brass agarbatti holder with ash catcher. Lotus design. Holds standard incense sticks.
+18,Diwali Special Hamper,gifts,Gift Hampers,79.99,99.99,bestseller,4.9,134,YES,diwali-hamper.jpg,Premium Diwali gift box with 5 diyas
+19,Cow Ghee (500ml),puja,Puja Samagri,16.99,,,4.8,208,YES,cow-ghee.jpg,Pure desi cow ghee made using traditional bilona method. Used for havan and daily puja.
+20,Chandan Powder (Sandalwood),incense,Dhoop & Incense,11.99,14.99,,4.7,119,YES,chandan-powder.jpg,Pure sandalwood (chandan) powder for tilak and havan. 100g pack. No artificial fragrance.
